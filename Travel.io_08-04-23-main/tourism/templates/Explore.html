@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
 {% block content %}
 
-<div class="main_container3 bg-light py-5">
-  <div class="container">
+<div class="main_container3 py-5" style="background-color: #f5f5dc;">
+  <div class="container" style="background-color: #f5f5dc;">
     <div class="row">
       <div class="col-md-8">
         <h1 class="display-4 mb-4 text-primary">Explore Santorini, Greece</h1>
@@ -15,6 +15,7 @@
   </div>
 </div>
 
+
 <div class="container py-5">
   <div class="row">
     <div class="col-md-12">
@@ -23,13 +24,14 @@
     </div>
   </div>
 
+
   <div class="row mt-5">
     <div class="col-md-12">
       <h2 class="display-5 mb-4 text-primary">What to Do</h2>
       <div class="row">
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Sunset">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/sunset.jpeg') }}" class="card-img-top" alt="Sunset">
             <div class="card-body">
               <h5 class="card-title text-primary">Watch the Sunset</h5>
               <p class="card-text text-secondary">Experience the world-famous sunset at Oia, one of the most beautiful sunsets you'll ever see.</p>
@@ -38,7 +40,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Wine Tasting">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/wine1.webp') }}" class="card-img-top" alt="Wine Tasting">
             <div class="card-body">
               <h5 class="card-title text-primary">Wine Tasting</h5>
               <p class="card-text text-secondary">Visit local wineries and taste the unique flavors of Santorini's volcanic soil.</p>
@@ -47,7 +49,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Beach">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/relaxonBeach.jpg') }}" class="card-img-top" alt="Beach">
             <div class="card-body">
               <h5 class="card-title text-primary">Relax on the Beach</h5>
               <p class="card-text text-secondary">Enjoy the black sand beaches of Perissa and Kamari, or the red sand beach of Akrotiri.</p>
@@ -64,7 +66,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Moussaka">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/Moussaka.jpeg') }}" class="card-img-top" alt="Moussaka">
             <div class="card-body">
               <h5 class="card-title text-primary">Moussaka</h5>
               <p class="card-text text-secondary">A traditional Greek dish made with layers of eggplant, ground meat, and béchamel sauce.</p>
@@ -73,7 +75,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Gyro">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/Gyros.jpg') }}" class="card-img-top" alt="Gyro">
             <div class="card-body">
               <h5 class="card-title text-primary">Gyro</h5>
               <p class="card-text text-secondary">A popular street food made with meat, usually pork or chicken, wrapped in pita bread with veggies and sauce.</p>
@@ -82,7 +84,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Baklava">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/Baklava.jpg') }}" class="card-img-top" alt="Baklava">
             <div class="card-body">
               <h5 class="card-title text-primary">Baklava</h5>
               <p class="card-text text-secondary">A sweet pastry made of layers of filo filled with chopped nuts and sweetened with syrup or honey.</p>
@@ -99,7 +101,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Hotel A">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/Hotel1.webp') }}" class="card-img-top" alt="Hotel A">
             <div class="card-body">
               <h5 class="card-title text-primary">Hotel A</h5>
               <p class="card-text text-secondary">A luxurious hotel with stunning views of the caldera and private balconies.</p>
@@ -108,7 +110,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Hotel B">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/hotel.webp') }}" class="card-img-top" alt="Hotel B">
             <div class="card-body">
               <h5 class="card-title text-primary">Hotel B</h5>
               <p class="card-text text-secondary">A boutique hotel offering a relaxing atmosphere and close to the beach.</p>
@@ -117,7 +119,7 @@
         </div>
         <div class="col-md-4">
           <div class="card shadow-sm hover-scale border-primary">
-            <img src="{{ url_for('static', filename='assets/bg-2.jpg') }}" class="card-img-top" alt="Hotel C">
+            <img src="{{ url_for('static', filename='assets/Webpage_pics/hotel3.jpg') }}" class="card-img-top" alt="Hotel C">
             <div class="card-body">
               <h5 class="card-title text-primary">Hotel C</h5>
               <p class="card-text text-secondary">A family-friendly hotel with a pool and easy access to local attractions.</p>
