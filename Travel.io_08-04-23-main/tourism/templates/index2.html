@@ -23,9 +23,11 @@
       {% for pic in pics %}
       <div class="grid main_container3">
         <div class="card card__one">
+          <a href="{{ url_for('Explore') }}">
           <figure class="card__img">
             <img src="{{ url_for('static', filename= 'assets/' + pic.image ) }}" alt="country" width="340" height="280" />
           </figure>
+          </a>
           <div class="country__name">
             <i class="ri-map-pin-2-fill"></i>
             <span>{{ pic.country }}</span>
