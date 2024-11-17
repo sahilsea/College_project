@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container mt-5 pt-5">  <!-- Increased top margin and padding-top to create space between navbar and posts -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            {% for post in posts %}
+            <div class="post-card mb-4 p-4 border rounded shadow-sm">  <!-- Added padding, margin, and subtle shadow -->
+                <div class="d-flex align-items-center mb-3">  <!-- Flex container for author info -->
+                    <img src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}" 
+                         class="rounded-circle article-img mr-3" alt="Profile Picture">
+                    <div>
+                        <a href="#" class="text-dark font-weight-bold">{{ post.author.username }}</a>
+                        <small class="text-muted d-block">{{ post.date_posted.strftime('%Y-%m-%d') }}</small>
+                    </div>
+                </div>
+                <h2 class="mb-3">{{ post.title }}</h2>
+                <p class="mb-0">{{ post.content }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

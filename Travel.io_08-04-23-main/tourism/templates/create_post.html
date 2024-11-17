@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="container py-5 pt-5 mt-5">  <!-- Added mt-5 for top margin -->
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0 rounded-lg">
+                <div class="card-header bg-gradient bg-primary bg-opacity-10 border-0">
+                    <h2 class="text-center font-weight-bold text-primary my-4">Create New Post</h2>
+                </div>
+                <div class="card-body p-5">
+                    <form method="POST" class="needs-validation">
+                        {{ form.hidden_tag() }}
+                        
+                        <div class="mb-4">
+                            {{ form.title.label(class="form-label h6 text-muted") }}
+                            {% if form.title.errors %}
+                                {{ form.title(class="form-control form-control-lg is-invalid border-0 shadow-sm") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.title.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.title(class="form-control form-control-lg border-0 shadow-sm", placeholder="Enter your post title") }}
+                            {% endif %}
+                        </div>
+
+                        <div class="mb-4">
+                            {{ form.content.label(class="form-label h6 text-muted") }}
+                            {% if form.content.errors %}
+                                {{ form.content(class="form-control form-control-lg is-invalid border-0 shadow-sm", rows="8") }}
+                                <div class="invalid-feedback">
+                                    {% for error in form.content.errors %}
+                                        {{ error }}
+                                    {% endfor %}
+                                </div>
+                            {% else %}
+                                {{ form.content(class="form-control form-control-lg border-0 shadow-sm", rows="8", placeholder="Write your post content here...") }}
+                            {% endif %}
+                        </div>
+
+                        <div class="text-center mt-5">
+                            {{ form.submit(class="btn btn-primary btn-lg px-5 text-white shadow-sm") }}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
