@@ -8,28 +8,28 @@ from PIL import Image
 
 pics = [
     {
-        'country': 'SANTORINI GREECE',
-        'image': 'country-1.jpg',
+        'country': 'Mahabodhi Temple',
+        'image': 'Mahabodhi_Temple.jpg',
     },
     {
-        'country': 'VERNAZZA, ITALY',
-        'image': 'country-2.jpg',
+        'country': 'Munger fort',
+        'image': 'Munger_fort.webp',
     },
     {
-        'country': 'SAN FRANCISCO',
-        'image': 'country-3.jpg',
+        'country': 'Rajgir',
+        'image': 'Rajgir2.webp',
     },
     {
-        'country': 'NAVAGIO, GREECE',
-        'image': 'country-4.jpg',
+        'country': 'Planaterium Patna',
+        'image': 'Planaterium_patna.webp',
     },
     {
-        'country': 'AO NANG, THAILAND',
-        'image': 'country-5.jpg',
+        'country': 'Gurpa Hill',
+        'image': 'gurpa-hill.webp',
     },
     {
-        'country': 'PHI PHI ISLAND, THAILAND',
-        'image': 'country-6.jpg',
+        'country': 'Mandar Hill',
+        'image': 'Mandar_hill.webp',
     }
 ]
 
