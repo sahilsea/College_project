@@ -4,16 +4,15 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 
 
-
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
-app.config['SECRET_KEY'] = '6ec924337ec3665a51edafeba6ef5bfb'
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///site.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATION"] = False
+app.config["SECRET_KEY"] = "6ec924337ec3665a51edafeba6ef5bfb"
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
-login_manager.login_view = 'login'
-login_manager.login_message_category = 'info'
+login_manager.login_view = "login"
+login_manager.login_message_category = "info"
 
 
 # from tourism import app, db
@@ -26,7 +25,4 @@ with app.app_context():
     print("Database tables created successfully!")
 
 
-
-
 from tourism import routes
-
